@@ -1,0 +1,10 @@
+services :
+  db :
+    image : mysql
+    container_name : db
+    environment :
+       MYSQL_ROOT_PASSWORD : 1234
+       MYSQL_DATABASE : online_school
+    ports :
+      - "3309:3306"
+
